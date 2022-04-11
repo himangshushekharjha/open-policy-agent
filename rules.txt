@@ -1,0 +1,10 @@
+1) Allow only users with "morgan_blogger" permission to create blog
+2) Allow only logged in users to view blogs else prompt log in
+3) Allow only users with "morgan_editer" permission to edit their blog
+4) Don't allow users with banned permission to see any blog
+
+----------------------------------------------------------------
+
+5) Add rule that only user with "admin" permission can see all users
+6) Add serial rule that only users with "morgan_blogger" and "unbanned" permissions can create blog
+7) logout only if there are no logged in users
