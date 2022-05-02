@@ -3,3 +3,8 @@
 // 2) is req jira desc field empty
 // 3) if empty --> is there any attachment linked with jira
 // 4) is jira created or transitioned by authorized person
+
+
+
+-------------------------------------------------
+- User must be logged in and has permission 

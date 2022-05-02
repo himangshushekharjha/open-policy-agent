@@ -12,17 +12,26 @@
   </head>
   <body>
       <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="{{ url_for('index')}}">FlaskBlog</a>
+        <a class="navbar-brand" href="{{ url_for('index')}}">MSDE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="{{url_for('jiras')}}">Jiras</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('pullRequests')}}">Pull Requests</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{url_for('create')}}">New Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('create_jira')}}">New Jira</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('create_pr')}}">New Pull Request</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>

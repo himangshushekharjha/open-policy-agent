@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to MSDE {% endblock %}</h1>
+    {% for jira in jiras %}
+        <a href="{{ url_for('jira', jira_id=jira['id']) }}">
+            <h2>{{ jira['title'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ jira['created'] }}</span>
+        <hr>
+    {% endfor %}
+{% endblock %}

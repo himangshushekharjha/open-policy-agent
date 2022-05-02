@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %} {{ jira['title'] }} {% endblock %}</h2>
+    <span class="badge badge-primary">{{ jira['created'] }}</span>
+    <p>Author - {{ jira['createdBy'] }}</p>
+    <p>Type - {{ jira['type'] }}</p>
+    <p>Pull Request ID - {{ jira['pullRequestID'] }}</p>
+    <p>{{ jira['descriptions'] }}</p>
+    <p>Approved - </p>
+    {% if jira['approved'] == 1 %}
+        <div>Your Requirement Jira Has Been Approved</div>
+    {% else %}
+        <div>Your Requirement Jira Has not been approved</div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to MSDE {% endblock %}</h1>
+    {% for pr in pullRequests %}
+        <h2>{{ pr['id']}} - {{pr['title'] }}</h2>
+        <span class="badge badge-primary">{{ pr['created'] }}</span>
+        <span class="badge badge-primary">{{ pr['createdBy'] }}</span>
+        <hr>
+    {% endfor %}
+{% endblock %}
